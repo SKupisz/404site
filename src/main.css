@@ -1,0 +1,65 @@
+@keyframes rotating {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes glitch {
+  50%{
+    opacity: 0;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+.onLoadCut {
+  overflow: hidden;
+}
+#preloader {
+  color: white;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background-color: #aaa;
+  transition: top 500ms linear 500ms;
+  animation: glitch 0.5s linear 5.5s 2
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+#error-number-wrapper {
+  width: 100%;
+  background: #111;
+  color: white;
+  text-align: center;
+}
+#rotating-wheel {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #666;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  border-right-color: #e2e;
+  border-left-color: aqua;
+  border-top-color: dodgerblue;
+  animation: rotating 1s linear 0s 5;
+  opacity: 1;
+}
+#error-content{
+  width: 100%;
+  background: #111;
+  color: white;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 1.2em;
+}
+.error{
+  font-size: 1.5em;
+}

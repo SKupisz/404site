@@ -63,3 +63,14 @@ body {
 .error{
   font-size: 1.5em;
 }
+@media screen and (max-width: 1024px){
+  .error{
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 770px)
+{
+  .error{
+    font-size: 1.05em;
+  }
+}
